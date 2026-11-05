@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyproject-check"
+version = "0.1.0"
+description = "Finds what is wrong in your pyproject.toml, at the key it is at, before you build or publish"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+keywords = ["pyproject", "pyproject.toml", "lint", "packaging", "pep-621"]
+
+[project.urls]
+Repository = "https://github.com/tick-ai/pyproject-check"
+
+[project.scripts]
+pyproject-check = "pyproject_check:main"
+
+[tool.setuptools]
+py-modules = ["pyproject_check"]
